@@ -51,19 +51,7 @@ public class Agenzia {
                     System.out.println("invalid answer");
                     break;
                     }
-        /*System.out.println("Data di partenza (yyyy-mm-dd)");
-
-
-
-        System.out.println("Data di ritorno (yyyy-mm-dd)");
-
-         */
-
         }
-
-
-
-
         scan.close();
     }
 }

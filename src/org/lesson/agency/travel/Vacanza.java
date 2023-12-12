@@ -67,13 +67,9 @@ public class Vacanza {
 
     @Override
     public String toString() {
-        return "Vacanza{" +
+        return "Vacanza" +
                 "destinazione='" + destinazione + '\'' +
-                ", partenza=" + partenza +
-                ", arrivo=" + arrivo +
-                " " +
-                 "Giorni=" + calculateDaysBetween(partenza,arrivo) +
-                '}';
+                "partenza=" + partenza + "arrivo=" + arrivo + " " + "Giorni=" + calculateDaysBetween(partenza,arrivo) ;
     }
 }
 
