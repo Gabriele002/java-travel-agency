@@ -27,6 +27,7 @@ public class Vacanza {
     }
 
     public void setDestinazione(String destinazione) {
+        validateDestinazione(destinazione);
         this.destinazione = destinazione;
     }
 
@@ -67,9 +68,10 @@ public class Vacanza {
 
     @Override
     public String toString() {
-        return "Vacanza" +
-                "destinazione='" + destinazione + '\'' +
-                "partenza=" + partenza + "arrivo=" + arrivo + " " + "Giorni=" + calculateDaysBetween(partenza,arrivo) ;
+        return "Vacanza" + "\n " +
+                "Destinazione: " + destinazione + "\n " +
+                "Partenza: " + partenza +
+                "\n " + "Ritorno: " + arrivo + "\n " + "Durata del viaggio: " + calculateDaysBetween(partenza,arrivo) + " giorni " ;
     }
 }
 
